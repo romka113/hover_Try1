@@ -1,0 +1,80 @@
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #982422;
+    background-color: #949886;
+    border: 1px solid #954651;
+    padding: 10px;
+    margin: 10px;
+}
+li{
+    display: inline;
+}
+a:link{
+    color: red;
+}
+a:hover{
+    background-color: rgba(104,255,218,0.91);
+    border-radius: 50%;
+}
+a:visited{
+    color: black;
+}
+a:active{
+    background-color: #2d7075;
+}
+body ul{
+    text-align: center;
+}
+div p:first-child{
+    color: rgba(160,137,255,0.91);
+}
+div p:nth-child(2){
+    color: red;
+}
+div p:nth-child(3){
+    color: green;
+}
+#text_p:before{
+    content: 'before';
+    display: block;
+    clear: both;
+}
+#text_p:after{
+    content: 'after';
+    display: block;
+    clear: both;
+}
+.example-color::selection {
+    color: #8e44ad;
+    background-color: #8e44ad;
+}
+.psedu{
+    width: 50vw;
+    height: 50vh;
+    position: relative;
+    display: block;
+    padding: 1rem;
+
+}
+.psedu:after{
+    content: "";
+    background-image: url("../bird2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-color: skyblue;
+    top:0;
+    bottom:0;
+    right:-45px;
+    left:0;
+    opacity: 0.6;
+    z-index: 1;
+}
